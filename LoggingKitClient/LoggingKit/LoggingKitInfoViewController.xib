@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoggingKitInfoViewController" customModule="LoggingKitClient" customModuleProvider="target">
+            <connections>
+                <outlet property="detailView" destination="3WZ-VZ-ub7" id="tXU-9O-Rzw"/>
+                <outlet property="tableView" destination="YmF-41-77I" id="RTY-l5-50z"/>
+                <outlet property="view" destination="zLE-LG-seK" id="TRp-4O-ts5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zLE-LG-seK">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YmF-41-77I">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="342"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="nsB-4Z-OWe"/>
+                        <outlet property="delegate" destination="-1" id="wgO-gB-ba3"/>
+                    </connections>
+                </tableView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3WZ-VZ-ub7">
+                    <rect key="frame" x="0.0" y="340" width="375" height="327"/>
+                    <color key="backgroundColor" red="0.96078431606292725" green="0.96078431606292725" blue="0.96078431606292725" alpha="1" colorSpace="calibratedRGB"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YmF-41-77I" secondAttribute="trailing" id="1SG-Xj-ox0"/>
+                <constraint firstAttribute="trailing" secondItem="3WZ-VZ-ub7" secondAttribute="trailing" id="2kE-Sa-H7q"/>
+                <constraint firstItem="YmF-41-77I" firstAttribute="top" secondItem="zLE-LG-seK" secondAttribute="top" id="LAa-iE-mfn"/>
+                <constraint firstItem="3WZ-VZ-ub7" firstAttribute="leading" secondItem="zLE-LG-seK" secondAttribute="leading" id="Lsg-NF-rJh"/>
+                <constraint firstItem="YmF-41-77I" firstAttribute="leading" secondItem="zLE-LG-seK" secondAttribute="leading" id="V4b-Sv-QZn"/>
+                <constraint firstAttribute="bottom" secondItem="YmF-41-77I" secondAttribute="bottom" constant="325" id="ZSn-Tg-no3"/>
+                <constraint firstAttribute="bottom" secondItem="3WZ-VZ-ub7" secondAttribute="bottom" id="bRQ-6J-wRL"/>
+                <constraint firstItem="3WZ-VZ-ub7" firstAttribute="top" secondItem="zLE-LG-seK" secondAttribute="top" constant="340" id="zXb-ep-0uk"/>
+            </constraints>
+            <point key="canvasLocation" x="249.5" y="-116.5"/>
+        </view>
+    </objects>
+</document>

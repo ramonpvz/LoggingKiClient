@@ -1,0 +1,10 @@
+framework module LoggingKit {
+  umbrella header "LoggingKit.h"
+
+  export *
+  module * { export * }
+}
+
+module LoggingKit.Swift {
+    header "LoggingKit-Swift.h"
+}
